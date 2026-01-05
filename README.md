@@ -12,7 +12,7 @@ Optional cheat detection monitors suspicious activity during the exam.
 **Purpose:**  
 Screen1 allows the student to enter their Name and Student ID to start the exam. The data is stored in TinyDB for later use in the exam.
 
----
+
 
 ## Components & Palette Details
 
@@ -22,7 +22,7 @@ Screen1 allows the student to enter their Name and Student ID to start the exam.
 - **Properties:**
 - **Purpose:** Display screen title.
 
----
+
 
 ### 2. TextBox1 – Student Name
 - **Palette:** User Interface → TextBox  
@@ -30,7 +30,7 @@ Screen1 allows the student to enter their Name and Student ID to start the exam.
 - **Properties:**
 - **Purpose:** Input field for student’s name.
 
----
+
 
 ### 3. TextBox2 – Student ID
 - **Palette:** User Interface → TextBox  
@@ -38,11 +38,11 @@ Screen1 allows the student to enter their Name and Student ID to start the exam.
 - **Properties:**
 - **Purpose:** Input field for student’s name.
 
----
+
 
 - **Purpose:** Input field for student’s ID.
 
----
+
 
 ### 4. Button1 – Start Exam
 - **Palette:** User Interface → Button  
@@ -50,7 +50,7 @@ Screen1 allows the student to enter their Name and Student ID to start the exam.
 - **Properties:**
 - **Purpose:** Input field for student’s ID.
 
----
+
 
 ### 5. TinyDB1 – Store Student Data
 - **Palette:** Storage → TinyDB  
@@ -70,7 +70,6 @@ When Button1.Click:
       Tag: "StudentID"
       Value: TextBox2.Text
   Open Screen2
-
 
 ### Screen2 – Exam
 - LabelTimer: Countdown (60 seconds)
