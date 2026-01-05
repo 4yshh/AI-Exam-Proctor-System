@@ -53,13 +53,16 @@ Optional cheat detection monitors suspicious activity during the exam.
 ## Folder Structure
 AI-Exam-Proctor-System/
 │
-├── AI_Exam_Proctor_System.aia
-├── README.md
-├── assets/
-│ ├── logo.png
-│ └── background.jpg
-└── blocks/
-├── Screen1_Login_Blocks.png
-├── Screen2_Exam_Blocks.png
-├── Screen3_CheatEngine_Blocks.png
-└── Screen4_Dashboard_Blocks.png
+├── AI_Exam_Proctor_System.aia        # Main App Inventor project file
+├── README.md                          # Project description
+│
+├── assets/                            # Images / media used in the app
+│   ├── logo.png
+│   └── background.jpg
+│
+└── blocks/                            # Optional: screenshots of Blocks for documentation
+    ├── Screen1_Login_Blocks.png
+    ├── Screen2_Exam_Blocks.png
+    ├── Screen3_CheatEngine_Blocks.png
+    └── Screen4_Dashboard_Blocks.png
+
