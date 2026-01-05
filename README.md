@@ -59,18 +59,7 @@ Screen1 allows the student to enter their Name and Student ID to start the exam.
   - Tag: `"StudentName"` → stores student’s name
   - Tag: `"StudentID"` → stores student’s ID  
 - **Purpose:** Keep student login info during the session.
-
-- **Blocks Logic:**
-```text
-When Button1.Click:
-  TinyDB1.StoreValue
-      Tag: "StudentName"
-      Value: TextBox1.Text
-  TinyDB1.StoreValue
-      Tag: "StudentID"
-      Value: TextBox2.Text
-  Open Screen2
-
+---
 ### Screen2 – Exam
 - LabelTimer: Countdown (60 seconds)
 - Label1: Question text
