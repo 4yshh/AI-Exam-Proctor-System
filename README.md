@@ -51,4 +51,15 @@ Optional cheat detection monitors suspicious activity during the exam.
     ```
 
 ## Folder Structure
-
+AI-Exam-Proctor-System/
+│
+├── AI_Exam_Proctor_System.aia
+├── README.md
+├── assets/
+│ ├── logo.png
+│ └── background.jpg
+└── blocks/
+├── Screen1_Login_Blocks.png
+├── Screen2_Exam_Blocks.png
+├── Screen3_CheatEngine_Blocks.png
+└── Screen4_Dashboard_Blocks.png
