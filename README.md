@@ -7,12 +7,70 @@ Optional cheat detection monitors suspicious activity during the exam.
 
 ## Screens
 
-### Screen1 – Login
-- Label: Student Login
-- TextBox1: Enter Name
-- TextBox2: Enter Student ID
-- Button1: Start Exam
-- TinyDB1: Stores student info
+# Screen1 – Login
+
+**Purpose:**  
+Screen1 allows the student to enter their Name and Student ID to start the exam. The data is stored in TinyDB for later use in the exam.
+
+---
+
+## Components & Palette Details
+
+### 1. Label1 – Title
+- **Palette:** User Interface → Label  
+- **Drag & Drop:** Place at top of Screen1  
+- **Properties:**
+- **Purpose:** Display screen title.
+
+---
+
+### 2. TextBox1 – Student Name
+- **Palette:** User Interface → TextBox  
+- **Drag & Drop:** Below Label1  
+- **Properties:**
+- **Purpose:** Input field for student’s name.
+
+---
+
+### 3. TextBox2 – Student ID
+- **Palette:** User Interface → TextBox  
+- **Drag & Drop:** Below TextBox1  
+- **Properties:**
+- **Purpose:** Input field for student’s name.
+
+---
+
+- **Purpose:** Input field for student’s ID.
+
+---
+
+### 4. Button1 – Start Exam
+- **Palette:** User Interface → Button  
+- **Drag & Drop:** Below TextBox2  
+- **Properties:**
+- **Purpose:** Input field for student’s ID.
+
+---
+
+### 5. TinyDB1 – Store Student Data
+- **Palette:** Storage → TinyDB  
+- **Drag & Drop:** Anywhere on Screen1 (it will be invisible in the app)  
+- **Properties / Setup:**
+  - Tag: `"StudentName"` → stores student’s name
+  - Tag: `"StudentID"` → stores student’s ID  
+- **Purpose:** Keep student login info during the session.
+
+- **Blocks Logic:**
+```text
+When Button1.Click:
+  TinyDB1.StoreValue
+      Tag: "StudentName"
+      Value: TextBox1.Text
+  TinyDB1.StoreValue
+      Tag: "StudentID"
+      Value: TextBox2.Text
+  Open Screen2
+
 
 ### Screen2 – Exam
 - LabelTimer: Countdown (60 seconds)
@@ -49,20 +107,4 @@ Optional cheat detection monitors suspicious activity during the exam.
     ListPicker1.Enabled = true
     Clock1.TimerEnabled = true
     ```
-
-## Folder Structure
-AI-Exam-Proctor-System/
-│
-├── AI_Exam_Proctor_System.aia        # Main App Inventor project file
-├── README.md                          # Project description
-│
-├── assets/                            # Images / media used in the app
-│   ├── logo.png
-│   └── background.jpg
-│
-└── blocks/                            # Optional: screenshots of Blocks for documentation
-    ├── Screen1_Login_Blocks.png
-    ├── Screen2_Exam_Blocks.png
-    ├── Screen3_CheatEngine_Blocks.png
-    └── Screen4_Dashboard_Blocks.png
 
